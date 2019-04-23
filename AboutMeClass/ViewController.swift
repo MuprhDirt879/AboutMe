@@ -14,8 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         nameLabel.text = ""
         hobbiesLabel.text = ""
-//        print("My name is Ryan")
-       
     }
     @IBAction func introButtonTapped(_ sender: Any) {
         
@@ -23,7 +21,6 @@ class ViewController: UIViewController {
         hobbiesLabel.text = "Ice Hockey, Classic Car Collecting, 3 gun" }
     
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var hobbiesLabel: UILabel!
 }
 
