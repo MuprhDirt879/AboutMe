@@ -12,11 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
 //        print("My name is Ryan")
        
     }
     @IBAction func introButtonTapped(_ sender: Any) {
+        
         nameLabel.text = "Ryan Murphy"
         hobbiesLabel.text = "Ice Hockey, Classic Car Collecting, 3 gun" }
     
