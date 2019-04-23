@@ -30,35 +30,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-ie-KdC">
-                                <rect key="frame" x="105" y="80" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-ie-KdC">
+                                <rect key="frame" x="105" y="101" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVt-AE-r0l">
-                                <rect key="frame" x="126" y="124" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVt-AE-r0l">
+                                <rect key="frame" x="126" y="145" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-Qi-XZi">
+                                <rect key="frame" x="144.5" y="832" width="125" height="30"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AN-Pd-m8p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="26S-AC-POu" firstAttribute="baseline" secondItem="fqD-ie-KdC" secondAttribute="baseline" id="0NK-gH-6rq"/>
                             <constraint firstItem="fqD-ie-KdC" firstAttribute="leading" secondItem="26S-AC-POu" secondAttribute="trailing" constant="14" id="77z-rQ-4FU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rzF-Qi-XZi" secondAttribute="bottom" constant="2" id="7km-43-6TW"/>
                             <constraint firstItem="bRf-O5-ZCx" firstAttribute="baseline" secondItem="vVt-AE-r0l" secondAttribute="baseline" id="AkQ-rt-DnA"/>
                             <constraint firstItem="bRf-O5-ZCx" firstAttribute="top" secondItem="26S-AC-POu" secondAttribute="bottom" constant="23" id="Awu-9E-4C8"/>
                             <constraint firstItem="26S-AC-POu" firstAttribute="leading" secondItem="bRf-O5-ZCx" secondAttribute="leading" id="KXd-OT-AFp"/>
                             <constraint firstItem="26S-AC-POu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="TTF-6d-v2s"/>
                             <constraint firstItem="vVt-AE-r0l" firstAttribute="leading" secondItem="bRf-O5-ZCx" secondAttribute="trailing" constant="15" id="fo5-os-hrs"/>
                             <constraint firstItem="26S-AC-POu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="vUz-7b-Xvc"/>
+                            <constraint firstItem="rzF-Qi-XZi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xKg-cG-ipM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rzF-Qi-XZi" secondAttribute="bottom" id="yWh-Bt-O8d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="vVt-AE-r0l" id="EzV-FL-Yta"/>
+                        <outlet property="nameLabel" destination="fqD-ie-KdC" id="mLg-Nd-tGN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
